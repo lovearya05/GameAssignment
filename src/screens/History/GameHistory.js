@@ -38,7 +38,7 @@ const GameHistory = () => {
 
                     return <View style={{paddingVertical:8, paddingHorizontal:16, backgroundColor: index%2 ==0 ? 'rgba(0, 0, 0, 0)' :'rgba(0, 0, 0, 0.1)' }} >
                         <View style={[baseStyles.flxRowSpcBtwn]} > 
-                            <Text  style={[textBlk(12,400)]}>Your setUserMoves: {item?.userMoves}</Text>
+                            <Text  style={[textBlk(12,400)]}>Your Moves: {item?.userMoves}</Text>
                             <Text  style={[textBlk(12,400)]}>AI Moves: {item?.aiMoves} </Text>
                         </View>
                         <View style={[baseStyles.flxRowSpcBtwn]}  >
