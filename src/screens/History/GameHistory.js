@@ -1,4 +1,4 @@
-import { View, Text, FlatList } from 'react-native'
+import { View, Text, FlatList, StyleSheet } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import { textBlk } from '../../styleSheet/textStyles'
 import baseStyles from '../../styleSheet/baseStyleSheet'
@@ -22,8 +22,8 @@ const GameHistory = () => {
 
     return (
         <View  >
-            <View style={{ height: 100, backgroundColor: 'rgba(74, 133, 199, 1)', paddingHorizontal: 16 }} >
-                <View style={[baseStyles.flxRowSpcBtwn, { paddingVertical: 16, justifyContent:'center', alignItems:'center' }]} >
+            <View style={style.topContainer} >
+                <View style={style.topView} >
                     <Text style={[textBlk(16,500), {}]} >Game History</Text>
                 </View>
             </View>
@@ -54,3 +54,8 @@ const GameHistory = () => {
 }
 
 export default GameHistory
+
+const style = StyleSheet.create({
+    topContainer : { height: 100, backgroundColor: 'rgba(74, 133, 199, 1)', paddingHorizontal: 16 },
+    topView : [baseStyles.flxRowSpcBtwn, { paddingVertical: 16, justifyContent:'center', alignItems:'center' }]
+})

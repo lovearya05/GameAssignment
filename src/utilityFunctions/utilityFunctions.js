@@ -1,6 +1,5 @@
 import Toast from 'react-native-simple-toast';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { setUser, setUserData } from '../redux/slicer';
 
 export const showToast = (text='')=>{
     Toast.show(text);
